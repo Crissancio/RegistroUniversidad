@@ -89,9 +89,9 @@ public class SecurityConfig {
         return http.build();
     }
 
-    @Override
+    //@Override
     public void configure(WebSecurity web) {
-        web.ignoring().antMatchers(
+        web.ignoring().requestMatchers(
             "/css/**", 
             "/js/**", 
             "/auth/**"
