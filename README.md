@@ -77,4 +77,4 @@ mvn exec:java -Dexec.mainClass="com.universidad.Main"
 
 ### Autor
 
-Este proyecto fue desarrollado por **Cristhian Pablo Álvarez Guarachi** como parte de la práctica 2 del curso de programación.
+Este proyecto fue desarrollado por **Cristhian Pablo Álvarez Guarachi** como parte de la práctica 2 del curso de Desarrollo Backend.
