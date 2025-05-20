@@ -1,1 +1,2 @@
-# RegistroUniversidad
+# Practica 2 
+## ALVAREZ GUARACHI CRISTHIAN PABLO
