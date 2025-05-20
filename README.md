@@ -1,57 +1,80 @@
 # RegistroUniversidad
 
-**RegistroUniversidad** es una aplicación desarrollada en Java que permite gestionar el registro de estudiantes en una universidad. Este proyecto fue creado como parte de una práctica académica por **Alvarez Guarachi Cristhian Pablo**.
+### Descripción del Proyecto
 
-## Características principales
+**RegistroUniversidad** permite realizar operaciones básicas relacionadas con la gestión de estudiantes, tales como:
 
-* **Gestión de estudiantes**: Permite registrar, editar y eliminar información de estudiantes.
-* **Interfaz de usuario**: Incluye una interfaz gráfica para facilitar la interacción con el usuario.
-* **Persistencia de datos**: Utiliza archivos o bases de datos para almacenar la información de manera persistente.
+* Agregar nuevos estudiantes al sistema.
+* Listar todos los estudiantes registrados.
+* Buscar estudiantes por criterios específicos.
+* Actualizar la información de un estudiante existente.
+* Eliminar estudiantes del registro.
 
-## Tecnologías utilizadas
+El proyecto está organizado en paquetes que separan las diferentes capas de la aplicación, como la lógica de negocio y la interfaz de usuario. Esto facilita el mantenimiento y la escalabilidad del sistema.
 
-* **Java**: Lenguaje de programación principal del proyecto.
-* **Java Swing**: Para la creación de la interfaz gráfica de usuario.
-* **Maven**: Herramienta de gestión y construcción del proyecto.
+### Estructura del Proyecto
 
-## Estructura del proyecto
-
-El proyecto sigue una estructura estándar de aplicaciones Java con Maven:
+La estructura del proyecto es la siguiente:
 
 ```
+
 RegistroUniversidad/
 ├── src/
 │   └── main/
-│       ├── java/
-│       │   └── [paquetes de clases Java]
-│       └── resources/
+│       └── java/
+│           └── [paquetes del proyecto]
 ├── pom.xml
-└── README.md
+├── README.md
+└── ...
 ```
 
-## Cómo ejecutar el proyecto
 
-1. Clona el repositorio:
 
-   ```bash
+* `src/main/java/` contiene el código fuente de la aplicación.
+* `pom.xml` es el archivo de configuración de Maven que gestiona las dependencias y la compilación del proyecto.
+* `README.md` proporciona información general sobre el proyecto.
+
+### Cómo Ejecutar la Aplicación
+
+Para compilar y ejecutar la aplicación, sigue estos pasos:
+
+1. Asegúrate de tener Java y Maven instalados en tu sistema.
+2. Clona el repositorio:
+
+   ```
    git clone https://github.com/Crissancio/RegistroUniversidad.git
    ```
 
-2. Navega al directorio del proyecto:
 
-   ```bash
-   cd RegistroUniversidad
-   ```
+3\. Navega al directorio del proyecto:
 
-3. Compila y ejecuta la aplicación utilizando Maven:
+```
+cd RegistroUniversidad
+```
 
-   ```bash
-   mvn clean install
-   mvn exec:java
-   ```
 
-   Asegúrate de tener Maven y Java instalados en tu sistema.
+4\. Compila el proyecto usando Maven:
 
-## Contribuciones
+```
+mvn compile
+```
 
-Este proyecto fue desarrollado con fines educativos y no está abierto a contribuciones externas en este momento.
+
+5\. Ejecuta la aplicación:
+
+```
+mvn exec:java -Dexec.mainClass="com.universidad.Main"
+```
+
+
+
+*Nota:* Asegúrate de reemplazar `"com.universidad.Main"` con el nombre completo de la clase principal si es diferente.
+
+### Requisitos del Sistema
+
+* Java 8 o superior
+* Maven 3.6 o superior
+
+### Autor
+
+Este proyecto fue desarrollado por **Cristhian Pablo Álvarez Guarachi** como parte de la práctica 2 del curso de programación.
